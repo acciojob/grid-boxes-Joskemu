@@ -1,1 +1,49 @@
 /*  your css code here. If applicable */
+/* Reset body styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+/* Grid container */
+#grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    grid-template-rows: repeat(2, 150px); /* 2 rows, each 150px high */
+    gap: 10px; /* Space between grid items */
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid items styling */
+#grid div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 8px;
+}
+
+/* Individual box colors */
+#grid div:nth-child(1) { background-color: #e74c3c; }
+#grid div:nth-child(2) { background-color: #3498db; }
+#grid div:nth-child(3) { background-color: #2ecc71; }
+#grid div:nth-child(4) { background-color: #f1c40f; }
+#grid div:nth-child(5) { background-color: #9b59b6; }
+#grid div:nth-child(6) { background-color: #e67e22; }
+#grid div:nth-child(7) { background-color: #1abc9c; }
+#grid div:nth-child(8) { background-color: #34495e; }
+#grid div:nth-child(9) { background-color: #16a085; }
+#grid div:nth-child(10) { background-color: #8e44ad; }
